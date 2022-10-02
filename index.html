@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300&family=Potta+One&family=Rubik+Moonrocks&display=swap');
+        </style>
+    
+
+
+</head>
+<body>
+    <div class="container disabled">
+        <h1>Image Editor</h1>
+        <hr>
+        <div class="view_img">
+            <img src="images/one1.png" alt="">
+        </div>
+        <div class="choose_img">
+            <button >Choose Image <img src="images/upload.png" alt=""></button>
+            <input type="file" name="" id="" accept="image/*" hidden>
+        </div>
+
+        <div class="slider">
+            <div class="filter_info">
+                <span class="name">Brightness</span>
+                <span class="value">100%</span>
+            </div>
+            <input type="range" name="" id="" max="200" min="0">
+        </div>
+
+        <div class="icon_filter1">
+            <div class="icon_room1">
+                <button ><img id="Brightness" class="active" src="images/brightness.png" alt=""> <p>Brightness</p> </button>
+                <button ><img id="Contrast" src="images/contrast.png" alt=""> <p>Contrast</p> </button>
+                <button ><img id="Saturation" src="images/brightness.png" alt=""> <p>Saturation</p> </button>
+                <button ><img id="Invert" src="images/invert.png" alt=""> <p>Invert</p> </button>
+                <button ><img id="Blur" src="images/blur.png" alt=""> <p>Blur</p> </button>
+            </div>
+        </div>
+
+        <div class="icon_filter2">
+            <div class="icon_room2">
+                <button id="rotate_left"><img src="images/rotate_left.png" alt=""><p>Rotate left</p></button>
+                <button id="rotate_right"><img src="images/rotate_right.png" alt=""><p>Rotate right</p></button>
+                <button id="h_flip"><img src="images/flip_horizontal.png" alt=""><p>Flip Horizontal</p></button>
+                <button id="v_flip"><img src="images/flip_vertical.png" alt=""><p>Flip Vertical</p></button>
+            </div>
+        </div>
+
+        <div class="btn_contain">
+            <button class="reset">Reset Filter</button>
+            <button class="save">Save Image</button>
+        </div>
+    
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
