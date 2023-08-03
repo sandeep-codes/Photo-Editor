@@ -65,6 +65,10 @@ body{
     width: 25px;
     padding: 3px 0 0 3px;
 }
+.choose_img button:hover {
+    background-color: rgb(240, 149, 3);
+    cursor: pointer;
+}
 .slider{
     width: 100%;
     padding: 10px 1.5vw;
